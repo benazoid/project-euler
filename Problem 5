@@ -1,0 +1,15 @@
+check  = 20
+num = check
+true = 'true'
+while 'true':
+  for i in range(1,check+1):
+    true = 'true'
+    if num%i == 0:
+      continue
+    else:
+      true = 'false'
+      break
+  if true == 'true':
+    break  
+  num += 1
+print(num)
