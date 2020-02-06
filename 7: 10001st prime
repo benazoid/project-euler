@@ -1,6 +1,6 @@
-num = 2
+num = 1
 multis = 0
-amount = 0
+amount = 1
 wanted = 10001
 while 'true':
   multis = 0
@@ -9,9 +9,8 @@ while 'true':
       multis += 1
   if multis == 1:
     amount += 1
-    #print(num)
   if amount == wanted:
     break
-  num += 1
-print(num)
+  num += 2
+print(number)
 
