@@ -1,4 +1,4 @@
-check  = 20
+check  = 20 #Amount of numbers you want it to divide by
 num = check
 true = 'true'
 while 'true':
