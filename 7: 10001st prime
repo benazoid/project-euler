@@ -2,6 +2,7 @@ num = 1
 multis = 0
 amount = 1
 wanted = 10001 #Number of primes wanted
+print(2)
 while 'true':
   multis = 0
   for i in range(1,num):
