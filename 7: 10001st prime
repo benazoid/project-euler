@@ -1,7 +1,7 @@
 num = 1
 multis = 0
 amount = 1
-wanted = 10001
+wanted = 10001 #Number of primes wanted
 while 'true':
   multis = 0
   for i in range(1,num):
@@ -9,8 +9,7 @@ while 'true':
       multis += 1
   if multis == 1:
     amount += 1
+    print(num)
   if amount == wanted:
     break
   num += 2
-print(number)
-
