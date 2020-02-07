@@ -1,0 +1,12 @@
+num = 2
+powerer = 5 #Is what power each num is held to
+total = 0
+totsAdorb = 0
+while 'true':
+  total = 0
+  for i in str(num):
+    total = total + pow(int(i),powerer)
+  if total == num:
+    totsAdorb += num
+    print(str(num)+' '+str(totsAdorb))
+  num += 1
