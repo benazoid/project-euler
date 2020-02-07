@@ -1,0 +1,12 @@
+def fac(num):
+  total = 1
+  for i in range(2,num+1):
+    total = total*i
+  return(total)
+def add(num):
+  total = 0
+  num = str(num)
+  for i in num:
+    total = total + int(i)
+  return total
+print(add(fac(100))) # Put the number you want factorialsumed in the parentheses
