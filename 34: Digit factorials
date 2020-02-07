@@ -1,0 +1,12 @@
+import math
+num = 3
+total = 0
+tots = 0
+while 'true':
+  total = 0
+  for i in str(num):
+    total += math.factorial(int(i))
+  if total == num:
+    tots += total
+    print(str(num)+' '+str(tots))
+  num += 1
