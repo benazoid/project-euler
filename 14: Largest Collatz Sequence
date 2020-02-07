@@ -1,0 +1,21 @@
+start = 1
+big = 0
+bigNum = 0
+until = 13
+def coll(num):
+  change = num
+  amount = 1
+  while change != 1:
+    if change%2 == 0:
+      change = change/2
+    else:
+      change = change*3+1
+    amount += 1
+  return amount
+
+while start<1000000:
+  if coll(start)>big:
+    big = coll(start)
+    bigNum = start
+    print(str(big)+' '+str(bigNum))
+  start += 1
