@@ -1,0 +1,8 @@
+big = 100 # small ≤ a ≤ big and small ≤ b ≤ big
+small = 2
+nums = []
+for i in range(small,big+1):
+  for j in range(small,big+1):
+    if pow(i,j) not in nums:
+      nums.append(pow(i,j))
+print(len(nums))
