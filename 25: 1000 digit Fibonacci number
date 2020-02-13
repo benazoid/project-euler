@@ -1,0 +1,14 @@
+maxLen = 1000 # Maximum length of the number
+f1 = 1
+f2 = 1
+f3 = 0
+num = 2
+while len(str(f3)) < maxLen:
+  f3 = f1 + f2
+  print(f3)
+  f1 = f2
+  f2 = f3 
+  num += 1
+print('done')
+print(len(str(f3)))
+print(num)
