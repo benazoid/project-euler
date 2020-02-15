@@ -1,0 +1,23 @@
+def et(num):
+  new = 0
+  while 'true':
+    new = 0
+    for i in str(num):
+      new = new + pow(int(i),2)
+    num = new
+    #print(num)
+    if num == 1:
+      return('false')
+      break
+    if num == 89:
+      return('true')
+      break
+x = 1
+count = 0
+while x < 10000000:
+  print(et(x))
+  if et(x) == 'true':
+    count += 1
+  x += 1
+print('finish')
+print(count)
