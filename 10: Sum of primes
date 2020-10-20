@@ -1,20 +1,15 @@
-num = 1
-multis = 0
-amount = 1
 total = 2
-wanted = 10001 #Number of primes wanted
-print(2)
-while num<2000000:
-  multis = 0
-  for i in range(1,num):
+num = 3
+goal = 2000000
+while num < goal:
+  yes = False
+  for i in range(3,num,2):
     if num%i == 0:
-      multis += 1
-  if multis == 1:
-    amount += 1
+      yes = True
+      break
+  if yes == False:
     print(num)
     total = total + num
-  if amount == wanted:
-    break
-  num += 2
-print('finish')
+  num = num + 2
+print("Done")
 print(total)
